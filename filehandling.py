@@ -47,3 +47,31 @@ with open('fruits.txt', 'r') as file:
     # Remove newline characters from each fruit
     fruit_list = [fruit.strip() for fruit in fruit_list]
     print(f"Fruits from file: {fruit_list}")    
+
+## Reading words and counting them
+with open('example.txt', 'r') as file:
+    content = file.read()
+    words = content.split()
+    word_count = len(words)
+    print(f"Total words in the file: {word_count}")
+    print(f"Words: {words}")
+
+## file handling with dictionaries
+# Writing a dictionary to a file
+person = {'name': 'Alice', 'age': 30, 'city': 'New York'}
+with open('person.txt', 'w') as file:
+    for key, value in person.items():
+        file.write(f"{key}: {value}\n")
+# Reading a dictionary from a file
+with open('person.txt', 'r') as file:
+    person_dict = {}
+    for line in file:
+        key, value = line.strip().split(': ')
+        person_dict[key] = value
+    print(f"Person from file: {person_dict}")
+
+## reading a file line by line and count characters in each line
+with open('example.txt', 'r') as file:
+    for line in file:
+        char_count = len(line)
+        print(f"Line: {line.strip()} - Characters: {char_count}")
