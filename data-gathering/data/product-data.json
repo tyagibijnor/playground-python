@@ -1,0 +1,29 @@
+[
+  {
+    "user_id": 1,
+    "user_name": "Aarav Sharma",
+    "email": "aarav@example.com",
+    "product_id": 101,
+    "product_name": "Wireless Mouse",
+    "category": "Electronics",
+    "price": 24.99
+  },
+  {
+    "user_id": 2,
+    "user_name": "Meera Patel",
+    "email": "meera@example.com",
+    "product_id": 102,
+    "product_name": "Notebook",
+    "category": "Stationery",
+    "price": 4.5
+  },
+  {
+    "user_id": 3,
+    "user_name": "Kabir Singh",
+    "email": "kabir@example.com",
+    "product_id": 103,
+    "product_name": "Water Bottle",
+    "category": "Home",
+    "price": 12.75
+  }
+]
