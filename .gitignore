@@ -1,0 +1,30 @@
+# Python bytecode and cache directories
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# IDE settings
+.idea/
+.vscode/
+
+# Local secrets and configuration
+.env
+.env.*
+!.env.example
+secret_config.json
+
+# Generated files
+build/
+dist/
+
+# OS and editor temporary files
+.DS_Store
+Thumbs.db
+*.swp
