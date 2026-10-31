@@ -64,3 +64,43 @@ print("Accessed value from nested dictionary:", nested_value)
 ## methods for dictionary 
 dictionary["new_key"] = "new_value" # This will add a new key-value pair to the dictionary
 print("Dictionary after adding new key-value pair:", dictionary)    
+
+## more dictionary examples
+student = {"name": "Asha", "age": 20, "course": "Python"}
+print("Student name:", student["name"])
+student["age"] = 21  # Update an existing value
+student["city"] = "Delhi"  # Add a new key-value pair
+print("Updated student dictionary:", student)
+print("Course with a default:", student.get("course", "Not enrolled"))
+print("Keys and values:")
+for key, value in student.items():
+    print(f"  {key}: {value}")
+
+## set examples
+colors = {"red", "green", "blue", "green"}  # Sets keep only unique values
+print("Set of colors (duplicates removed):", colors)
+colors.add("yellow")
+colors.discard("red")  # discard does not raise an error if the item is absent
+print("Colors after adding yellow and removing red:", colors)
+
+first_numbers = {1, 2, 3, 4}
+second_numbers = {3, 4, 5, 6}
+print("Numbers in either set (union):", first_numbers | second_numbers)
+print("Numbers in both sets (intersection):", first_numbers & second_numbers)
+print("Numbers only in the first set (difference):", first_numbers - second_numbers)
+
+## comparing list, tuple, set, and dictionary
+example_list = ["apple", "banana", "apple"]
+example_tuple = ("apple", "banana", "apple")
+example_set = {"apple", "banana", "apple"}
+example_dict = {"fruit": "apple", "color": "red"}
+
+print("List: ordered, changeable, and allows duplicates:", example_list)
+print("Tuple: ordered, not changeable, and allows duplicates:", example_tuple)
+print("Set: unique items with no guaranteed order:", example_set)
+print("Dictionary: key-value pairs, accessed by key:", example_dict)
+print("First item in the list:", example_list[0])
+print("First item in the tuple:", example_tuple[0])
+print("Value for 'fruit' in the dictionary:", example_dict["fruit"])
+print("Is 'banana' in the set?", "banana" in example_set)
+
