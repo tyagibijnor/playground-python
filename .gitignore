@@ -24,6 +24,10 @@ secret_config.json
 build/
 dist/
 
+# ZIP archives and directories ending in .zip
+*.zip
+*.ZIP
+
 # OS and editor temporary files
 .DS_Store
 Thumbs.db
